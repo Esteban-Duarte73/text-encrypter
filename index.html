@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web para encriptar y desencriptar textos.">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="translator">
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Ingresa el texto que deseas cifrar o descifrar..." aria-label="Texto de entrada"></textarea>
+                <div class="button-group">
+                    <button id="encryptButton">Cifrar</button>
+                    <button id="decryptButton">Descifrar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="result-container">
+                    <div class="result" id="resultText"></div>
+                    <img src="muneco.png" alt="Imagen de resultado" class="result-image" id="resultImage">
+                    <p class="parrafoResultado">Ningun mensaje fue encontrado</p>
+                </div>
+                <button id="copyButton">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Esteban Alejandro Duarte Prieto &copy; 2024
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
